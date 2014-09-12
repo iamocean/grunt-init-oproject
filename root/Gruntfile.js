@@ -6,6 +6,8 @@ module.exports = function(grunt){
 
     // 统计各个任务运行时间
     require('time-grunt')(grunt);
+    // Load multiple grunt tasks(plugins)
+    require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
         // Config
@@ -161,21 +163,6 @@ module.exports = function(grunt){
             }
         }
     });
-
-    // Load the plugin(s)
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-compress');
-
-    grunt.loadNpmTasks('grunt-usemin');
-    grunt.loadNpmTasks('grunt-filerev');
 
     // Default task(s)
     grunt.registerTask('default', ['less:dev', 'watch']);

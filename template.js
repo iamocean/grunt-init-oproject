@@ -84,9 +84,10 @@ exports.template = function(grunt, init, done) {
         'grunt-contrib-clean': '~0.6.0',
         'grunt-contrib-compress': '~0.9.1',
         'grunt-contrib-watch': '~0.6.1',
-        "grunt-usemin": "~2.3.0",
-        "grunt-filerev": "~0.2.1",
-        "time-grunt": "~0.4.0"
+        'grunt-usemin': '~2.3.0',
+        'grunt-filerev': '~0.2.1',
+        'time-grunt': '~0.4.0',
+        'load-grunt-tasks': '~0.6.0'
       },
     });
 
