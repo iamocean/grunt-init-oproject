@@ -110,7 +110,8 @@ module.exports = function(grunt){
             build: {
                 options: {
                     removeComments: true,
-                    collapseWhitespace: true
+                    collapseWhitespace: true,
+                    minifyJS: true
                 },
                 files: {
                     'build/index.html': 'build/index.html'
